@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DFF0D8; /* Verde claro suave */
+    color: #2E7D32; /* Verde escuro para melhor contraste */
+}
+
+header { 
+    background-color: #4CAF50;
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+
+.header-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%; /* Mantém a largura total */
+    height: auto; /* Mantém a proporção natural */
+    max-height: 200px; /* Ajuste para evitar cortes exagerados */
+    object-fit: contain; /* Garante que a imagem fique visível sem cortes */
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    display: inline;
+    margin-right: 10px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    color: white;
+ 
+}
+
+main {
+    padding: 2rem;
+    background-color: #f4f4f4; /* Cor de fundo do conteúdo principal */
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 2rem;
+    background-color: #C8E6C9; /* Verde suave para seções */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+.about-img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: contain; /* Ajusta a imagem para caber no contêiner sem cortes */
+  border-radius: 10px; /* Opcional: adiciona cantos arredondados */
+}
+
+#about {
+    background-color: #8FBC8F;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.header-img, .about-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about {
+    background-color: #8FBC8F; /* Verde claro */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    form {
+        width: 100%;
+    }
+}
