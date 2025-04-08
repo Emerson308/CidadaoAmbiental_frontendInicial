@@ -135,7 +135,8 @@ footer {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding-top: 20px;
+    /* padding: 20px 0; */
     /* height: 250px; */
     min-height: 25dvh;
     /* position: fixed; */
@@ -213,7 +214,9 @@ footer *{
     /* height: 140px; */
     justify-content: flex-end;
     gap: 20px;
+    padding: 20px 0;
     margin-top: 40px;
+    background-color: #2E7D32;
 }
 
 .emailContato{
