@@ -10,24 +10,30 @@ body {
     color: #2E7D32; /* Verde escuro para melhor contraste */
 }
 
+a{
+    text-decoration: none;
+    color: lightgray;
+}
+
 header { 
     background-color: #4CAF50;
     color: white;
     /* padding: 1%; */
     text-align: center;
     display: flex;
-    height: 100px;
-    justify-content: space-between;
+    /* height: 100px; */
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
 header * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .logo{
     /* width: 22%; */
-    height: 100%;
+    height: 100px;
 }
 
 .header-img {
@@ -39,17 +45,18 @@ header * {
     object-fit: contain;    
 }
 
-nav{
+.navbar{
     display: flex;
     height: 100%;
-    height: auto;
-    /* margin-top: 20px; */
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 nav ul {
     list-style: none;
     /* display: flex; */
-    height: 100%;
+    /* height: 100%; */
 }
 
 nav ul li {
@@ -66,6 +73,29 @@ nav ul li a {
  
 }
 
+.btnsLogins{
+    width: 400px;
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+}
+
+.btnsLogins button{
+    border: none;
+    width: 40%;
+    border-radius: 25px;
+    border: 2px solid black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btnsLogins button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
 main {
     padding: 2rem;
     background-color: #f4f4f4; /* Cor de fundo do conteúdo principal */
@@ -76,33 +106,21 @@ section {
     margin-bottom: 2rem;
     background-color: #C8E6C9; /* Verde suave para seções */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 25px;
     margin-bottom: 20px;
 }
-
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-
 
 .about-img {
   max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
   height: auto; /* Mantém a proporção da imagem */
   object-fit: contain; /* Ajusta a imagem para caber no contêiner sem cortes */
-  border-radius: 10px; /* Opcional: adiciona cantos arredondados */
+  border-radius: 25px; /* Opcional: adiciona cantos arredondados */
 }
 
 #about {
     background-color: #8FBC8F;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .about {
@@ -111,12 +129,118 @@ footer {
     border-radius: 5px;
 }
 
+
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    /* height: 250px; */
+    min-height: 25dvh;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+}
+
+footer *{
+    /* border: 1px solid blue; */
+}
+
+.rodape{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 35px; */
+    /* text-align: left; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.linksUteis{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 40%; */
+}
+
+.linksUteis .linksOrganizados{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+}
+
+.linksUteis .linksOrganizados a:hover{
+    /* font-size: 1.01rem; */
+    text-decoration:underline;
+}
+
+.redesSociais{
+    flex: 1;
+    display: flex;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+}
+
+.redesSociais .redesSociaisOrganizadas{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 15px;
+    /* width: auto; */
+}
+
+.redeSocialCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #404040;
+}
+
+.redeSocialCircle:hover{
+    background-color: white;
+    color: #404040;
+}
+
+.maisInformacoes{
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* height: 140px; */
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.emailContato{
+    /* flex: 100%; */
+}
+
+.copyright{
+    /* flex: 100%; */
+}
+
+
+
+
 @media (max-width: 768px) {
-    nav ul li {
+    /* nav ul li {
         display: block;
         margin-bottom: 10px;
-    }
+    } */
     form {
         width: 100%;
+    }
+    header{
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px 0;
+    }
+    header .navbar{
+        display: none;
     }
 }
