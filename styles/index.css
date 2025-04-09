@@ -22,7 +22,7 @@ header {
     text-align: center;
     display: flex;
     /* height: 100px; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* justify-content: space-between; */
     align-items: center;
 }
@@ -82,7 +82,15 @@ nav ul li a {
 
 .btnsLogins button{
     border: none;
-    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    padding: 0 20px;
+    padding-left: 25px;
+    /* justify-content: flex-end; */
+    /* width: 45%; */
     border-radius: 25px;
     border: 2px solid black;
     font-size: 16px;
@@ -166,9 +174,19 @@ footer *{
 
 .linksUteis .linksOrganizados{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    gap: 15px;
+    /* flex-wrap: wrap; */
+    align-items: center;
     text-align: left;
     margin: auto;
+}
+
+.linksUteis .linksOrganizados p{
+    /* display: flex; */
+    border-right: 2px solid white;
+    padding-right: 6px;
+    /* padding: 4px 0; */
 }
 
 .linksUteis .linksOrganizados a:hover{
@@ -245,5 +263,19 @@ footer *{
     }
     header .navbar{
         display: none;
+    }
+
+    .linksUteis .linksOrganizados p{
+        /* display: flex; */
+        /* border-right: 2px solid white; */
+        /* padding-right: 6px; */
+        border: none;
+        padding: none;
+        /* padding: 4px 0; */
+    }
+    .linksUteis .linksOrganizados{
+        /* display: flex; */
+        flex-direction: column;
+        gap: 0;
     }
 }
