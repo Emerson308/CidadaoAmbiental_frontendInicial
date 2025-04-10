@@ -1,77 +1,161 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #DFF0D8; /* Verde claro suave */
-    color: #2E7D32; /* Verde escuro para melhor contraste */
+    background-color: #f0f9f5;
+    color: #2e4d3b;
+    line-height: 1.6;
+    padding: 20px;
+}
+.intro {
+    background-color: #e8f5e9;
+    border-left: 6px solid #43a047;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin: 30px auto;
+    max-width: 850px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    font-size: 18px;
+    
+    line-height: 1.6;
 }
 
-header { 
-    background-color: #4CAF50;
+header {
+    background-color: #4caf50;
     color: white;
-    padding: 1%;
+    padding: 20px;
     text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 1rem;
-    display: inline;
-    margin-right: 10px;
-
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    color: white;
- 
-}
-
-main {
-    padding: 2rem;
-    background-color: #f4f4f4; /* Cor de fundo do conteúdo principal */
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 2rem;
-    background-color: #C8E6C9; /* Verde suave para seções */
-    padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-footer {
-    background-color: #4CAF50;
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+nav a {
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.about {
-    background-color: #8FBC8F; /* Verde claro */
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+.about, .join {
+    background-color: white;
     padding: 20px;
-    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-    form {
-        width: 100%;
-    }
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
 }
+
+.initial {
+    font-size: 26px;
+    font-weight: 700;
+    color: #43a047; /* Verde escuro marcante */
+    margin-right: 4px;
+}
+
+.card.mission {
+    border-left: 5px solid #388e3c;
+    background: #e0f2f1; 
+    
+}
+
+.card.values {
+    border-left: 5px solid #388e3c;
+    background: #e0f2f1;
+}
+
+.card.mission ul li, .card.values ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    flex: 1 1 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(21, 255, 0, 0.1);
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.team {
+    background: linear-gradient(135deg, #2e7d32, #66bb6a); /* verde escuro para verde médio */
+    color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.team:hover {
+    transform: scale(1.02);
+}
+
+.team ul {
+    margin-top: 15px;
+    padding-left: 25px;
+    list-style: circle;
+    color: #e0f2f1; /* tom mais claro pros nomes */
+}
+
+.team h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.team p {
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+
+.team ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style: disc;
+}
+.card.join {
+    border-left: 5px solid #388e3c; /* mesma cor da seção Valores */
+    background: #e0f2f1;            /* mesmo fundo */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+}
+

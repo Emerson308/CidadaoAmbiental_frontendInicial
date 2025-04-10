@@ -5,12 +5,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;  /* Fonte Poppins */
     background-color: #DFF0D8; /* Verde claro suave */
     color: #2E7D32; /* Verde escuro para melhor contraste */
 }
 
-a{
+a {
     text-decoration: none;
     color: lightgray;
 }
@@ -18,21 +18,16 @@ a{
 header { 
     background-color: #4CAF50;
     color: white;
-    /* padding: 1%; */
     text-align: center;
     display: flex;
-    /* height: 100px; */
-    /* flex-wrap: wrap; */
-    /* justify-content: space-between; */
     align-items: center;
 }
 
 header * {
-    /* border: 1px solid red; */
+    /* Sem alterações */
 }
 
-.logo{
-    /* width: 22%; */
+.logo {
     height: 100px;
 }
 
@@ -41,11 +36,10 @@ header * {
     margin: 0 auto;
     width: 100%; 
     height: 100%;
-    /* max-height: 200px;  */
     object-fit: contain;    
 }
 
-.navbar{
+.navbar {
     display: flex;
     height: 100%;
     justify-content: center;
@@ -55,161 +49,133 @@ header * {
 
 nav ul {
     list-style: none;
-    /* display: flex; */
-    /* height: 100%; */
 }
 
 nav ul li {
     margin: 0 1rem;
     display: inline;
     margin-right: 10px;
-
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     color: white;
- 
 }
 
-.btnsLogins{
+.btnsLogins {
     width: 400px;
     display: flex;
     height: 50px;
     justify-content: space-evenly;
 }
 
-.btnsLogins button{
+.btnsLogins button {
     border: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* justify-content: center; */
     gap: 10px;
     padding: 0 20px;
     padding-left: 25px;
-    /* justify-content: flex-end; */
-    /* width: 45%; */
     border-radius: 25px;
     border: 2px solid black;
     font-size: 16px;
     cursor: pointer;
 }
 
-.btnsLogins button:hover{
+.btnsLogins button:hover {
     background-color: black;
     color: white;
 }
 
-
-
+/* =============================== */
+/* MAIN & SEÇÕES                 */
+/* =============================== */
 main {
-    padding: 2rem;
-    background-color: #f4f4f4; /* Cor de fundo do conteúdo principal */
     padding: 20px;
+    background-color: #f4f4f4;
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
     background-color: #C8E6C9; /* Verde suave para seções */
     padding: 20px;
     border-radius: 25px;
-    margin-bottom: 20px;
 }
 
 .about-img {
-  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-  height: auto; /* Mantém a proporção da imagem */
-  object-fit: contain; /* Ajusta a imagem para caber no contêiner sem cortes */
-  border-radius: 25px; /* Opcional: adiciona cantos arredondados */
+    max-width: 100%; 
+    height: auto;
+    object-fit: contain;
+    border-radius: 25px;
 }
 
+/* Caso haja uma seção com id "about" na Home */
 #about {
     background-color: #8FBC8F;
     padding: 20px;
     border-radius: 25px;
 }
 
-.about {
-    background-color: #8FBC8F; /* Verde claro */
-    padding: 20px;
-    border-radius: 5px;
-}
-
-
-
+/* =============================== */
+/* FOOTER                          */
+/* =============================== */
 footer {
     background-color: #4CAF50;
     color: white;
     text-align: center;
     padding-top: 20px;
-    /* padding: 20px 0; */
-    /* height: 250px; */
     min-height: 25dvh;
-    /* position: fixed; */
     width: 100%;
     bottom: 0;
 }
 
-footer *{
-    /* border: 1px solid blue; */
+footer * {
+    /* Sem alterações */
 }
 
-.rodape{
+.rodape {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 35px; */
-    /* text-align: left; */
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
-.linksUteis{
+.linksUteis {
     flex: 1;
     display: flex;
     flex-direction: column;
-    /* padding-left: 40%; */
 }
 
-.linksUteis .linksOrganizados{
+.linksUteis .linksOrganizados {
     display: flex;
-    /* flex-direction: column; */
     gap: 15px;
-    /* flex-wrap: wrap; */
     align-items: center;
     text-align: left;
     margin: auto;
 }
 
-.linksUteis .linksOrganizados p{
-    /* display: flex; */
+.linksUteis .linksOrganizados p {
     border-right: 2px solid white;
     padding-right: 6px;
-    /* padding: 4px 0; */
 }
 
-.linksUteis .linksOrganizados a:hover{
-    /* font-size: 1.01rem; */
-    text-decoration:underline;
+.linksUteis .linksOrganizados a:hover {
+    text-decoration: underline;
 }
 
-.redesSociais{
+.redesSociais {
     flex: 1;
     display: flex;
-    /* justify-content: flex-start; */
-    /* align-items: flex-start; */
 }
 
-.redesSociais .redesSociaisOrganizadas{
+.redesSociais .redesSociaisOrganizadas {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     gap: 15px;
-    /* width: auto; */
 }
 
-.redeSocialCircle{
+.redeSocialCircle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,17 +185,16 @@ footer *{
     background-color: #404040;
 }
 
-.redeSocialCircle:hover{
+.redeSocialCircle:hover {
     background-color: white;
     color: #404040;
 }
 
-.maisInformacoes{
+.maisInformacoes {
     flex: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* height: 140px; */
     justify-content: flex-end;
     gap: 20px;
     padding: 20px 0;
@@ -237,44 +202,34 @@ footer *{
     background-color: #2E7D32;
 }
 
-.emailContato{
-    /* flex: 100%; */
+.emailContato {
+    /* Sem alterações */
 }
 
-.copyright{
-    /* flex: 100%; */
+.copyright {
+    /* Sem alterações */
 }
 
-
-
-
+/* =============================== */
+/* RESPONSIVIDADE                */
+/* =============================== */
 @media (max-width: 768px) {
-    /* nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    } */
     form {
         width: 100%;
     }
-    header{
+    header {
         flex-direction: column;
         gap: 25px;
         padding: 25px 0;
     }
-    header .navbar{
+    header .navbar {
         display: none;
     }
-
-    .linksUteis .linksOrganizados p{
-        /* display: flex; */
-        /* border-right: 2px solid white; */
-        /* padding-right: 6px; */
+    .linksUteis .linksOrganizados p {
         border: none;
-        padding: none;
-        /* padding: 4px 0; */
+        padding: 0;
     }
-    .linksUteis .linksOrganizados{
-        /* display: flex; */
+    .linksUteis .linksOrganizados {
         flex-direction: column;
         gap: 0;
     }
