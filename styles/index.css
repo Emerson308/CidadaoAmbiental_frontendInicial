@@ -236,7 +236,7 @@ footer * {
 /* =============================== */
 /* RESPONSIVIDADE                */
 /* =============================== */
-@media (max-width: 768px) {
+@media (max-width: 1065px) {
     form {
         width: 100%;
     }
