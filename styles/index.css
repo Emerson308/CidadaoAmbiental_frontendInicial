@@ -8,6 +8,8 @@ body {
     font-family: 'Poppins', sans-serif;  /* Fonte Poppins */
     background-color: #DFF0D8; /* Verde claro suave */
     color: #2E7D32; /* Verde escuro para melhor contraste */
+    /* display: flex;
+    flex-direction: column; */
 }
 
 a {
@@ -25,6 +27,7 @@ header {
 
 header * {
     /* Sem alterações */
+    /* border: 1px solid blue; */
 }
 
 .logo {
@@ -63,11 +66,24 @@ nav ul li a {
     color: white;
 }
 
+nav ul li a:hover {
+    color: white;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
 .btnsLogins {
     width: 400px;
     display: flex;
     height: 50px;
     justify-content: space-evenly;
+    height: 100px;
+    padding: 25px 0;
 }
 
 .btnsLogins button {
@@ -95,6 +111,7 @@ nav ul li a {
 main {
     padding: 20px;
     background-color: #f4f4f4;
+    /* margin-bottom: 20px; */
 }
 
 section {
@@ -126,9 +143,12 @@ footer {
     color: white;
     text-align: center;
     padding-top: 20px;
-    min-height: 25dvh;
+    /* min-height: 25dvh; */
+    height: auto;
     width: 100%;
     bottom: 0;
+    /* flex: 100%; */
+    /* margin-top: auto; */
 }
 
 footer * {
@@ -161,6 +181,9 @@ footer * {
 
 .linksUteis .linksOrganizados a:hover {
     text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    opacity: 0.8;
 }
 
 .redesSociais {
@@ -220,7 +243,8 @@ footer * {
     header {
         flex-direction: column;
         gap: 25px;
-        padding: 25px 0;
+        /* padding: 25px 0; */
+        padding-top: 25px;
     }
     header .navbar {
         display: none;
@@ -232,5 +256,23 @@ footer * {
     .linksUteis .linksOrganizados {
         flex-direction: column;
         gap: 0;
+    }
+    .btnsLogins {
+        background-color: #f4f4f4;
+        width: 100%;
+    }
+    
+    .btnsLogins button {
+        background-color: #202020;
+        color: white;
+        border: 1px solid #202020;
+        border: none;
+        /* justify-content: flex-start; */
+    }
+    .btnsLogins button:hover {
+        background-color: white;
+        color: #202020;
+        border: 1px solid #202020;
+        transform: scale(1.05);
     }
 }
