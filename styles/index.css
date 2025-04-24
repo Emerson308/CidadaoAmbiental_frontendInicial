@@ -22,6 +22,7 @@ header {
     color: white;
     text-align: center;
     display: flex;
+    padding: 5px;
     align-items: center;
 }
 
@@ -98,10 +99,16 @@ nav ul li a:hover {
     border: 2px solid black;
     font-size: 16px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .btnsLogins button:hover {
     background-color: black;
+    color: white;
+}
+
+.btnBaixar{
+    background-color: #16433b;
     color: white;
 }
 
@@ -116,7 +123,7 @@ main {
 
 section {
     margin-bottom: 20px;
-    background-color: #C8E6C9; /* Verde suave para seções */
+    background-color: #C8E6C9;
     padding: 20px;
     border-radius: 25px;
 }

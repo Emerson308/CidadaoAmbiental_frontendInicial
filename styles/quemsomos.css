@@ -27,10 +27,33 @@ body {
 header {
     background-color: #4caf50;
     color: white;
-    padding: 20px;
+    position: relative;
+    /* font-size: 25px; */
+    padding: 25px;
     text-align: center;
     border-radius: 10px;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
+
+}
+
+header h1{
+    margin-bottom: none;
+    /* border: 1px solid black; */
+}
+
+.btnIrIndex{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 25px;
+}
+
+.btnIrIndex span{
+    font-size: 40px;
 }
 
 nav ul {
@@ -47,7 +70,7 @@ nav a {
     font-weight: 500;
 }
 
-h1, h2 {
+h2 {
     margin-bottom: 15px;
 }
 
