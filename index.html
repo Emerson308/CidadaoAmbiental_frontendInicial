@@ -15,16 +15,14 @@
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="" id="">Novidades</a></li>
-                <li><a href="" id="">Suporte</a></li>
+                <li><a href="novidades.html" id="">Novidades</a></li>
+                <!-- <li><a href="" id="">Suporte</a></li> -->
                 <li><a href="quemsomos.html">Sobre nós</a></li>
             </ul>
         </nav>
         <div class="btnsLogins">
-            <button class="btnLogin">Login / Cadastro <span class="material-symbols-outlined">arrow_forward_ios</span></button>
-            <button class="btnBaixar">Baixar <span class="material-symbols-outlined">
-                    download
-                    </span></button>
+            <button onclick="enviarParaLink('tela_de_login.html')" class="btnLogin">Login / Cadastro <span class="material-symbols-outlined">arrow_forward_ios</span></button>
+            <!-- <button class="btnBaixar">Baixar <span class="material-symbols-outlined">download</span></button> -->
         </div>
     </header>
     <main>
@@ -33,13 +31,15 @@
                 <h1 class="hero-title">Sua Voz Faz a Diferença na Nossa Cidade</h1>
                 <p class="hero-subtitle">Reporte problemas urbanos de forma fácil e rápida e ajude a construir um ambiente melhor para todos.</p>
                 <div class="hero-buttons">
-                    <button class="btnPrimary">Denunciar Agora</button>
-                    <button class="btnSecondary">Saiba Mais</button>
+                    <button onclick="enviarParaLink('tela_de_login.html')" class="btnPrimary">Denunciar Agora</button>
+                    <button onclick="enviarParaLink('quemsomos.html')" class="btnSecondary">Sobre nós</button>
                 </div>
             </div>
             <div class="hero-image">
                 <img src="imagens/cidadeIlustração-min.jpg" class="hero-img" id="imgCidade1">
-
+                <img src="imagens/ponte-com-cidade-min-min.jpg" class="hero-img" id="imgCidade2">
+                <img src="imagens/tiro-vertical-da-cidade-movimentada-refletindo-no-rio-min-min.jpg" class="hero-img" id="imgCidade3">
+                <img src="imagens/urbano-trafego-cityscape-min-min.jpg" class="hero-img" id="imgCidade4">
             </div>
         </section>
 
@@ -94,29 +94,33 @@
     </main>
     <footer>
         <div class="rodape">
+            <div class="logoRodape">
+                <img src="imagens/logoCidadaoAmbiental.png" alt="Cidadão Ambiental" class="rodapeLogo">
+                <div class="maisInformacoes">
+                    <div class="emailContato">
+                        <p>Entre em contato conosco pelo email: contato@cidadaoambiental.org</p>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2025 Cidadão Ambiental. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+    
+            </div>
             <div class="linksUteis">
                 <div class="linksOrganizados">
-                    <p>Links Uteis</p>
-                    <a href="">Suporte</a>
+                    <p>Empresa</p>
+                    <!-- <a href="">Suporte</a> -->
                     <a href="quemsomos.html">Sobre nós</a>
-                    <a href="">Novidades</a>
-                    </div>
+                    <a href="novidades.html">Novidades</a>
+                </div>
             </div>
-            <div class="redesSociais">
+            <!-- <div class="redesSociais">
                 <div class="redesSociaisOrganizadas">
                     <div class="redeSocialCircle"><i class="fi fi-brands-instagram"></i></div>
                     <div class="redeSocialCircle"><i class="fi fi-brands-twitter"></i></div>
                     <div class="redeSocialCircle"><i class="fi fi-brands-facebook"></i></div>
                 </div>
-            </div>
-            <div class="maisInformacoes">
-                <div class="emailContato">
-                    <p>Entre em contato conosco pelo email: contato@cidadaoambiental.org</p>
-                </div>
-                <div class="copyright">
-                    <p>&copy; 2025 Cidadão Ambiental. Todos os direitos reservados.</p>
-                </div>
-            </div>
+            </div> -->
         </div>
     </footer>
     <script src="script/index.js"></script>

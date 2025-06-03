@@ -1,0 +1,150 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e layout da página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    width: 100dvw;
+    color: white;
+}
+
+.voltarHome{
+    position: fixed;
+    top: 35px;
+    left: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.voltarHome h3{
+    font-size: 16px;
+}
+
+.btnIrIndex{
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    /* left: 25px; */
+    font-size: 24px;
+}
+
+/* Container principal */
+.login-form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+/* Estilização dos campos de input */
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    border: 1px solid #555;
+    font-size: 16px;
+    background: #222;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+input:focus {
+    border-color: #9815cc;
+    background: #333;
+}
+
+/* Botão de login */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #303030;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s, transform 0.2s;
+    border:3px solid  #9815cc
+    /* a */
+}
+
+.login-button:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+    color: #000;
+    border: 3px solid white;
+    
+}
+
+.login-button:focus {
+    outline: 2px solid #1db954;
+}
+
+/* Link para cadastro */
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #bbb;
+    text-align: center;
+}
+
+.signup-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+.mensagemVerificacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 13px;
+    border-radius: 5px;
+    /* display: none; */
+    opacity: 0;
+}
+.mensagemVerificacao.sucess{
+    border: 2px solid green;
+    color: green;
+    opacity: 1;
+}
+.mensagemVerificacao.fail{
+    border: 2px solid red;
+    color: red;
+    opacity: 1;
+}

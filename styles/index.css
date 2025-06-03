@@ -212,8 +212,13 @@ section {
     max-width: 40%;
 }
 
+.hero-img.activeCityImg{
+    display: block;
+}
+
 .hero-img {
     display: block;
+    display: none;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -316,7 +321,7 @@ footer {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     /* min-height: 25dvh; */
     height: auto;
     width: 100%;
@@ -334,14 +339,32 @@ footer * {
     flex-wrap: wrap;
 }
 
-.linksUteis {
-    flex: 1;
+.logoRodape{
+    /* border: 1px solid black; */
+    flex: 40%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+}
+
+.rodapeLogo{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.linksUteis {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    /* height: 100%; */
+    height: 250px;
 }
 
 .linksUteis .linksOrganizados {
     display: flex;
+    flex-direction: column;
     gap: 15px;
     align-items: center;
     text-align: left;
@@ -349,7 +372,7 @@ footer * {
 }
 
 .linksUteis .linksOrganizados p {
-    border-right: 2px solid white;
+    /* border-bottom: 2px solid white; */
     padding-right: 6px;
 }
 
@@ -395,8 +418,8 @@ footer * {
     justify-content: flex-end;
     gap: 20px;
     padding: 20px 0;
-    margin-top: 40px;
-    background-color: #2E7D32;
+    /* margin-top: 40px; */
+    /* background-color: #2E7D32; */
 }
 
 .emailContato {
@@ -447,6 +470,8 @@ footer * {
         border: 1px solid #202020;
         transform: scale(1.05);
     }
+
+    
 }
 
 @media (max-width: 768px) {
@@ -454,6 +479,11 @@ footer * {
         flex-direction: column;
         text-align: center;
     }
+
+    .linksUteis{
+        display: none;
+    }
+
     .hero-content {
         max-width: 90%;
         margin-bottom: 30px;
@@ -481,6 +511,11 @@ footer * {
     .btnsLogins button {
         width: 100%; /* Os botões ocupam a largura total em telas menores */
         min-width: auto; /* Remover a largura mínima */
+    }
+
+    #about{
+        padding-left: 35px;
+        padding-right: 35px;
     }
 }
 
