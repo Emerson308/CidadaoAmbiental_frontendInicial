@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">
+        <div onclick="enviarParaLink('/')" class="logo">
             <img src="imagens/logoCidadaoAmbiental.png" alt="Cidadão Ambiental" class="header-img">
         </div>
         <nav class="navbar">
@@ -38,11 +38,12 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="imagens/cidadeIlustração-min.jpg" class="hero-img">
+                <img src="imagens/cidadeIlustração-min.jpg" class="hero-img" id="imgCidade1">
+
             </div>
         </section>
 
-        <section id="how-it-works">
+        <section id="comoFunciona">
             <h2 class="section-title">Como Funciona? É Simples!</h2>
             <div class="steps-container">
                 <div class="step-card">
@@ -84,7 +85,7 @@
             </div>
         </section>
 
-        <section id="about" style="background-color: #8FBC8F; padding: 20px; border-radius: 25px; text-align: center;">
+        <section id="about">
             <!-- <img src="imagens/front.png" alt="Sobre nós" class="about-img" style="max-width: 80%; height: auto; object-fit: contain; border-radius: 15px; margin-bottom: 20px;"> -->
             <h2 class="section-title" style="font-size: 1.8em;">Sobre o Cidadão Ambiental</h2>
             <p style="color: white; line-height: 1.6;">O Cidadão Ambiental é uma plataforma criada para facilitar a comunicação entre os cidadãos e a prefeitura da nossa cidade. Nosso objetivo é tornar o processo de denúncia de problemas urbanos mais ágil e transparente, permitindo que você contribua ativamente para um ambiente melhor e uma cidade mais bem cuidada.</p>
@@ -118,6 +119,7 @@
             </div>
         </div>
     </footer>
+    <script src="script/index.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>

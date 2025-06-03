@@ -33,6 +33,7 @@ header * {
 
 .logo {
     height: 100px;
+    cursor: pointer;
 }
 
 .header-img {
@@ -142,7 +143,11 @@ section {
 #about {
     background-color: #8FBC8F;
     padding: 20px;
+    padding: 20px 100px;
+    /* border-radius: 25px; */
+    /* background-color: #8FBC8F; */
     border-radius: 25px;
+    text-align: center;
 }
 
 /* ===== SEÇÃO HERO ===== */
@@ -216,7 +221,7 @@ section {
 }
 
 /* ===== SEÇÃO COMO FUNCIONA ===== */
-#how-it-works {
+#comoFunciona {
     text-align: center;
     background-color: #f4f4f4; /* Cor de fundo neutra para destacar */
     padding: 40px 20px;
@@ -227,7 +232,7 @@ section {
 .section-title {
     color: #2E7D32;
     font-size: 2em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .steps-container {
