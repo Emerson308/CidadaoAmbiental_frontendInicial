@@ -14,6 +14,8 @@ body {
     height: 100vh;
     background: #000;
     color: white;
+    color: #4CAF50;
+    background-color: #DFF0D8;
 }
 
 .voltarHome{
@@ -24,8 +26,14 @@ body {
     display: flex;
     gap: 10px;
     font-size: 20px;
+    color: #000;
     align-items: center;
     cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    padding: 13px;
+    border-radius: 25px;
+
 }
 
 .voltarHome h3{
@@ -43,7 +51,8 @@ body {
 
 /* Container principal */
 .signup-form {
-    background: rgba(0, 0, 0, 0.8);
+    background-color: #c8e6c9;
+    border: 2px solid black;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -52,6 +61,8 @@ body {
     align-items: center;
     width: 100%;
     max-width: 400px;
+    gap: 15px;
+
 }
 
 /* Estilização dos campos de input */
@@ -66,10 +77,12 @@ input {
     border-radius: 50px;
     border: 1px solid #555;
     font-size: 16px;
-    background: #222;
+    /* background: #222; */
     color: white;
     outline: none;
-    transition: 0.3s;
+    color: black;
+    opacity: 0.8;
+    transition: all ease-in-out 0.3s;
 }
 
 input::placeholder {
@@ -77,15 +90,17 @@ input::placeholder {
 }
 
 input:focus {
-    border-color: #9815cc;
-    background: #333;
+    /* border-color: #9815cc; */
+    /* background: #333; */
+    opacity: 1;
+    border: 1px solid #2E7D32;
 }
 
 /* Botão de cadastro */
 .signup-button {
     width: 100%;
     padding: 12px;
-    background-color: #303030;
+    background-color: #4CAF50;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 50px;
@@ -93,14 +108,14 @@ input:focus {
     cursor: pointer;
     margin-top: 20px;
     transition: 0.3s, transform 0.2s;
-    border: 3px solid #9815cc;
+    /* border: 3px solid #9815cc; */
 }
 
 .signup-button:hover {
-    background-color: #ffffff;
-    transform: scale(1.05);
-    color: #000;
-    border: 3px solid white;
+    background-color: #2E7D32;
+    /* transform: scale(1.05); */
+    /* color: #000; */
+    /* border: 3px solid white; */
 }
 
 .signup-button:focus {
@@ -112,11 +127,13 @@ input:focus {
     margin-top: 15px;
     font-size: 14px;
     color: #bbb;
+    color: #333;
     text-align: center;
 }
 
 .login-link a {
     color: #ffffff;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -144,4 +161,16 @@ input:focus {
     border: 2px solid red;
     color: red;
     opacity: 1;
+}
+
+
+@media (max-width: 750px) {
+    /* .voltarHome h3{
+        display: none;
+    } */
+
+    .voltarHome{
+        top: 8px;
+        left: 45px;
+    }
 }

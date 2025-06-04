@@ -1,11 +1,11 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo e layout da página */
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -15,6 +15,8 @@ body {
     background: #000;
     width: 100dvw;
     color: white;
+    color: #4CAF50;
+    background-color: #DFF0D8;
 }
 
 .voltarHome{
@@ -27,6 +29,11 @@ body {
     font-size: 20px;
     align-items: center;
     cursor: pointer;
+    color: #000;
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 13px;
 }
 
 .voltarHome h3{
@@ -43,15 +50,18 @@ body {
 
 /* Container principal */
 .login-form {
-    background: rgba(0, 0, 0, 0.8);
+    /* background: rgba(0, 0, 0, 0.8); */
+    background-color: #c8e6c9;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
+    gap: 15px;
     align-items: center;
     width: 100%;
     max-width: 400px;
+    border: 2px solid black;
 }
 
 
@@ -67,10 +77,12 @@ input {
     border-radius: 50px;
     border: 1px solid #555;
     font-size: 16px;
-    background: #222;
+    /* background: #222; */
     color: white;
+    color: black;
     outline: none;
-    transition: 0.3s;
+    opacity: 0.8;
+    transition: all ease-in-out 0.3s;
 }
 
 input::placeholder {
@@ -78,32 +90,37 @@ input::placeholder {
 }
 
 input:focus {
-    border-color: #9815cc;
-    background: #333;
+    /* border-color: #9815cc; */
+    /* background: #333; */
+    border: 1px solid #2E7D32;
+    opacity: 1;
+    /* background: #4CAF50; */
 }
 
 /* Botão de login */
 .login-button {
     width: 100%;
     padding: 12px;
-    background-color: #303030;
+    /* background-color: #303030; */
+    background-color: #4CAF50;
     color: rgb(255, 255, 255);
+    /* color: black; */
     border: none;
     border-radius: 50px;
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
     transition: 0.3s, transform 0.2s;
-    border:3px solid  #9815cc
+    /* border:3px solid  #9815cc */
     /* a */
 }
 
 .login-button:hover {
-    background-color: #ffffff;
-    transform: scale(1.05);
-    color: #000;
-    border: 3px solid white;
-    
+    /* background-color: #ffffff; */
+    /* transform: scale(1.05); */
+    /* color: #000; */
+    /* border: 3px solid white; */
+    background-color: #2E7D32;
 }
 
 .login-button:focus {
@@ -115,11 +132,13 @@ input:focus {
     margin-top: 15px;
     font-size: 14px;
     color: #bbb;
+    color: #333;
     text-align: center;
 }
 
 .signup-link a {
     color: #ffffff;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -147,4 +166,16 @@ input:focus {
     border: 2px solid red;
     color: red;
     opacity: 1;
+}
+
+
+@media (max-width: 750px) {
+    /* .voltarHome h3{
+        display: none;
+    } */
+
+    .voltarHome{
+        top: 8px;
+        left: 45px;
+    }
 }
